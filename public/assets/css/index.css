@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+header {
+  background-color: rgb(53, 107, 206);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container div {
+  width: 30%;
+}
+
+.logo img {
+  width: 82px;
+  height: auto;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* home*/
+.banner {
+  width: 100%;
+  height: 400px;
+  margin-top: 3%;
+  background-color: rgb(160, 110, 110);
+}
+
+main {
+  margin-top: 5%;
+}
+
+.BlTitle {
+  font-size: 40px;
+}
+
+.bloco {
+  margin-bottom: 5%;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.destaque {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+}
+
+.imagemProduto {
+  width: 200px;
+  height: 200px;
+}
+
+.imgMini {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.descricao {
+  background-color: white;
+}
+
+.produto h2 {
+  font-size: 30px;
+}
+
+.produto h1 {
+  font-size: 25px;
+  color: green;
+}
+
+/* fim home */

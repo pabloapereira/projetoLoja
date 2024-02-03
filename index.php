@@ -7,7 +7,7 @@
     <title>Loja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
 
 <body>
@@ -29,7 +29,12 @@
     </header>
 
     <?php 
-        include('home.php');
+      $url = EXPLODE("/", $_SERVER['REQUEST_URI']);
+      if ($url[2] == "") {
+         include('app/pages/home/home.php');
+      } else {
+        
+      }
     ?>
 
 </body>
