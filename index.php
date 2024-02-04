@@ -29,12 +29,22 @@
     </header>
 
     <?php 
-      $url = EXPLODE("/", $_SERVER['REQUEST_URI']);
-      if ($url[2] == "") {
-         include('app/pages/home/home.php');
-      } else {
+        $pasta = 'app/pages/';
+        $url = EXPLODE("/", $_SERVER['REQUEST_URI']);
+
+        print_r($url);
+        echo 'posição 2:';
+        echo $url[2];
+
+        if ($url[2] == "" || $url[2] == "home") {
+            include($pasta.'/home/home.php');
+        }
+        else if (file_exists($pasta.'/'.$url[2].'.php')) {
+            echo 'existe';
+        }else {
+            echo 'nã';
+        }
         
-      }
     ?>
 
 </body>
